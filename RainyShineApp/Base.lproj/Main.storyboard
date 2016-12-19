@@ -161,6 +161,14 @@
                             <constraint firstAttribute="trailing" secondItem="NeO-aq-MnL" secondAttribute="trailing" id="gyz-xb-Sfh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="lsg-jB-QAb" id="dRl-No-1N0"/>
+                        <outlet property="currentWeatherImage" destination="Odb-3j-reS" id="6CO-Ne-rev"/>
+                        <outlet property="currentWeatherTypeLabel" destination="DIG-zP-bzp" id="ogf-nc-gVs"/>
+                        <outlet property="dateLabel" destination="lLg-Qy-RDa" id="1Mb-zj-gsu"/>
+                        <outlet property="locationLabel" destination="rX6-fg-mHU" id="zmr-SI-Vuc"/>
+                        <outlet property="tableView" destination="PdC-Ju-ogf" id="SjM-RU-DMs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
