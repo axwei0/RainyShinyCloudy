@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  RainyShineApp
-//
-//  Created by Christine Cunniff on 12/19/16.
-//  Copyright © 2016 Christine Cunniff. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
