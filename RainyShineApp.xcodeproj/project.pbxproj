@@ -68,6 +68,7 @@
 			children = (
 				F402E42C1E098F40007D70C7 /* Constants.swift */,
 				F402E4311E0991BE007D70C7 /* CurrentWeather.swift */,
+				F402E4331E09D715007D70C7 /* Forecast.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -116,7 +117,6 @@
 				F4C7FA3F1E087344001E2662 /* Assets.xcassets */,
 				F4C7FA411E087344001E2662 /* LaunchScreen.storyboard */,
 				F4C7FA441E087344001E2662 /* Info.plist */,
-				F402E4331E09D715007D70C7 /* Forecast.swift */,
 			);
 			path = RainyShineApp;
 			sourceTree = "<group>";
