@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="yIk-fS-VWa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="yIk-fS-VWa" customClass="WeatherCell" customModule="RainyShineApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yIk-fS-VWa" id="fNt-PK-7Pf">
@@ -147,6 +147,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="daylabel" destination="X6d-Pj-cAH" id="osL-tL-qb4"/>
+                                            <outlet property="highTemp" destination="8GU-CN-PVU" id="dNE-nk-cCg"/>
+                                            <outlet property="lowTemp" destination="p4C-mJ-z9B" id="dxk-GV-RFZ"/>
+                                            <outlet property="weatherIcon" destination="iP5-YY-QMw" id="XoM-oh-mwr"/>
+                                            <outlet property="weatherType" destination="goJ-XF-UZc" id="qNU-o5-DSc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
