@@ -41,6 +41,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             currentLocation = locationManager.location
+            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
