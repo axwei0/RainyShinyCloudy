@@ -162,6 +162,7 @@
 				TargetAttributes = {
 					F4C7FA341E087343001E2662 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = CFZ5ELBZA6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -378,6 +379,7 @@
 			baseConfigurationReference = E6F6366526672ACC92E51CEA /* Pods-RainyShineApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CFZ5ELBZA6;
 				INFOPLIST_FILE = RainyShineApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.christinecunniff.RainyShineApp;
@@ -391,6 +393,7 @@
 			baseConfigurationReference = F5E0432C778A29083B1C0E78 /* Pods-RainyShineApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CFZ5ELBZA6;
 				INFOPLIST_FILE = RainyShineApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.christinecunniff.RainyShineApp;
