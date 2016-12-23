@@ -30,12 +30,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
-        
-        currentWeather.downloadWeatherDetails {
-            self.downloadForecastData {
-                self.updateMainUI()
-            }
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,7 +42,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-            print(Location.sharedInstance.latitude, Location.sharedInstance.longitude)
+            currentWeather.downloadWeatherDetails {
+                self.downloadForecastData {
+                    self.updateMainUI()
+                }
+            }
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
@@ -56,8 +54,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     
     func downloadForecastData(completed: @escaping DownloadComplete) {
-        let forecastURL = URL(string: FORECAST_URL)!
-        Alamofire.request(forecastURL).responseJSON { response in
+        Alamofire.request(FORECAST_URL).responseJSON { response in
             let result = response.result
             
             if let dict = result.value as? Dictionary<String, AnyObject> {
@@ -66,7 +63,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
                     for obj in list {
                         let forecast = Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
-                        //print(obj)
+                        print(obj)
                     }
                     self.forecasts.remove(at: 0)
                     self.tableView.reloadData()
